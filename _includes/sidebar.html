@@ -1,0 +1,15 @@
+<div class="sidebar">
+    <div class="inner">
+        <h3>James Eastham</h3>
+        <p>Software Architect based in Cornwall, England. Focused on .NET, AWS and Domain Driven Design.</p>
+        <div class="nav-wrapper">
+            <ul>
+                {% for item in site.data.navigation %}
+                <li>
+                        <a href="{{item.path}}">{{item.title}}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

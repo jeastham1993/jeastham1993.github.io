@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Charter';
+    src: url('/assets/fonts/charter_bold_italic-webfont.eot') format('embedded-opentype'),
+        url('/assets/fonts/charter_bold_italic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Charter';
+    src: url('/assets/fonts/charter_bold-webfont.eot') format('embedded-opentype'),
+        url('/assets/fonts/charter_bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Charter';
+    src: url('/assets/fonts/charter_italic-webfont.eot') format('embedded-opentype'),
+        url('/assets/fonts/charter_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Charter';
+    src: url('/assets/fonts/charter_regular-webfont.eot') format('embedded-opentype'),
+        url('/assets/fonts/charter_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    min-height: 100vh;
+}
+
+body, a{
+    color: #111;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    line-height: 1.6;
+    font-size: 1rem;
+    font-family: 'Charter';
+}
+
+.float-right{
+    position: absolute;
+    right:0;
+}
+
+.page-container {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+}
+
+.sidebar{
+    left:0;
+    float: left;
+}
+
+.content{
+    float:right;
+}
+
+.sidebar, .content {
+    width: 50%;
+    height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    -webkit-transition: all 0.6s linear;
+    transition: all 0.6s linear;
+}
+
+.inner{    
+    width: calc(100% - 80px);
+    max-width: 480px;
+    padding: 40px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 2;
+    -webkit-transition: all 0.6s linear;
+    transition: all 0.6s linear;
+}
+
+.nav-wrapper ul li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 15px;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+p,a {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+article{
+    max-width:640px;
+}
+
+.post-wrapper{
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+}
+
+.post-container{
+    margin: 0px 4rem;
+}
+
+.post-meta{
+    font-style: italic;
+}
+
+.divider{
+    height: 1px;
+    width: 65%;
+    background-color: lightslategray;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+.snippet{
+    width: 100%;
+    margin-top: 0;
+    margin-left: 1em;
+    font-size: 16px;
+}

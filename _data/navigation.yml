@@ -1,0 +1,8 @@
+- title: Home
+  path: /
+- title: Writing
+  path: /blog
+- title: Projects
+  path: /projects
+- title: Work with me
+  path: /work-with-me
