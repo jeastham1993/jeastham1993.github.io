@@ -4,7 +4,6 @@ title:  "Clean Architecture in .NET Core"
 date:   2020-05-12 10:21:09 +0100
 author: James Eastham
 categories: dotnet architecture software
-snippet: Clean Architecture is a way of designing and building software first proposed by Uncle Bob Martin in his book of the same name. Discover the ways in which Clean Architecture practices can be implemented in .NET Core.
 ---
 I recently wrote an article around the importance of automating the coding standards around your codebase.
 
@@ -259,6 +258,7 @@ One of the biggest takeaways from Clean Architecture is to keep the business log
 
 It's for this reason, the Entities have a concept of a ICustomers datastore but no actual understanding or care about how the Customers datastore actually works. 
 
+{% highlight csharp linenos %}
 ```csharp
 // ------------------------------------------------------------
 // Copyright (c) James Eastham.
@@ -284,6 +284,7 @@ namespace CleanArchitecture.Core.Entities
     }
 }
 ```
+{% endhighlight %}
 
 Once we have the Entities mapped out, we can then move on to the next circle outwards. 
 
